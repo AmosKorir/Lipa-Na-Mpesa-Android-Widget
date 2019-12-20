@@ -1,6 +1,30 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+
+ext {
+  bintrayRepo = 'LipaNaMpesa'
+  bintrayName = 'LipaNaMpesa'
+
+  publishedGroupId ='com.lipanampesa'
+  libraryName ='LipaNaMpesa'
+  artifact ='LipaNaMpesa'
+
+  libraryDescription ='Lipa Na Mpesa floating widget'
+
+  siteUrl = 'https://github.com/skyways/Lipa-Na-Mpesa-Android-Widget'
+  gitUrl = 'https://github.com/skyways/Lipa-Na-Mpesa-Android-Widget'
+
+  libraryVersion = '0.1.0'
+  developerId = 'skyways'
+  developerName = 'Korir Amos'
+  developerEmail = 'amoskrr@gmail.com'
+
+  licenseName = 'The Apache Software License, Version 2.0'
+  licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+  allLicenses = ["Apache-2.0"]
+}
+
 android {
   compileSdkVersion 29
   buildToolsVersion "29.0.2"
@@ -15,20 +39,27 @@ android {
     consumerProguardFiles 'consumer-rules.pro'
   }
 
+
   buildTypes {
     release {
       minifyEnabled false
       proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
     }
   }
+  tasks.withType(Javadoc).all {
+    enabled = false
+  }
 }
 
 dependencies {
   implementation fileTree(dir: 'libs', include: ['*.jar'])
   implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+  implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
   implementation 'androidx.appcompat:appcompat:1.1.0'
-  implementation 'androidx.core:core-ktx:1.0.2'
+  implementation 'androidx.core:core-ktx:1.1.0'
   testImplementation 'junit:junit:4.12'
-  androidTestImplementation 'androidx.test.ext:junit:1.1.0'
+  androidTestImplementation 'androidx.test.ext:junit:1.1.1'
   androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 }
+apply from: 'https://raw.githubusercontent.com/numetriclabz/jcenter/master/installv.gradle'
+apply from: 'https://raw.githubusercontent.com/numetriclabz/jcenter/master/bintrayv.gradle'

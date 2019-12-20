@@ -8,6 +8,7 @@ import android.content.Intent
 import android.graphics.PixelFormat
 import android.os.IBinder
 import android.util.Log
+import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.MotionEvent
 import android.view.View
@@ -83,6 +84,7 @@ class FloatingService : Service(), View.OnClickListener {
       LayoutParams.FLAG_NOT_FOCUSABLE,
       PixelFormat.TRANSLUCENT
     )
+    params.gravity = Gravity.TOP or Gravity.RIGHT
     windowManager = getSystemService(Context.WINDOW_SERVICE) as WindowManager
     windowManager.addView(floatingBanner, params)
 
