@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:padding="0dp"
+    >
+
+  <Button
+      android:id="@+id/topCollapsible"
+      android:layout_width="150dp"
+      android:layout_height="wrap_content"
+      android:background="@color/colorPrimary"
+      android:text="Payment Details"
+      android:textColor="@android:color/white"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      />
+  <Button
+      android:id="@+id/topExpand"
+      android:layout_width="150dp"
+      android:layout_height="wrap_content"
+      android:background="@color/colorPrimary"
+      android:text="Click to Expand"
+      android:visibility="gone"
+      android:textColor="@android:color/white"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      />
+  <include
+      layout="@layout/info_layout"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/topCollapsible"
+      />
+</androidx.constraintlayout.widget.ConstraintLayout>
