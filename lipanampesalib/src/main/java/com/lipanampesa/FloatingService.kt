@@ -152,7 +152,7 @@ class FloatingService : Service(), View.OnClickListener {
     lateinit var clipboardManager: ClipboardManager
 
     val text: String = (view as TextView).text.toString()
-    if (!text.isEmpty()) {
+    if (text.isNotEmpty()) {
       clipboardManager =
         getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
       val clipData = ClipData.newPlainText("lipaKey", text)
