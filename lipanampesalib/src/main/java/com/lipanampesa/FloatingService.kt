@@ -37,6 +37,7 @@ class FloatingService : Service(), View.OnClickListener {
   private var initialY = 0
   private var initialTouchX = 0f
   private var initialTouchY = 0f
+  private lateinit var lipaNaMpesa: LipaNaMpesa
 
   override fun onBind(intent: Intent): IBinder? {
     return null
@@ -52,17 +53,17 @@ class FloatingService : Service(), View.OnClickListener {
       Log.d("Service", "lipa na mpesa param are empty")
       throw (Throwable("Params required"))
     } else {
-      val amount = extras[LipaNaMpesaConstants.AMOUNT] as String?
-      val account = extras[LipaNaMpesaConstants.ACCOUNT] as String?
-      val payBill = extras[LipaNaMpesaConstants.PAYBILL] as String?
-      amountTextView.text = amount
-      accountTextView.text = account
-      payBillTextView.text = payBill
+      lipaNaMpesa = extras.getSerializable(LipaNaMpesaConstants.LIPANAMPESA) as LipaNaMpesa
+      amountTextView.text = lipaNaMpesa.AMOUNT
+      accountTextView.text = lipaNaMpesa.ACCOUNT
+      payBillTextView.text = lipaNaMpesa.PAYBILL
+
     }
   }
 
   override fun onCreate() {
     super.onCreate()
+
     //bind ui
     floatingBanner = LayoutInflater.from(this).inflate(R.layout.floating_banner, null)
     collapseView = floatingBanner.findViewById(R.id.collapseView)
@@ -175,4 +176,5 @@ class FloatingService : Service(), View.OnClickListener {
     super.onDestroy()
     windowManager.removeView(floatingBanner)
   }
+
 }
