@@ -1,6 +1,6 @@
 # Lipa-Na-Mpesa-Android-Widget
 **Floating Lipa na Mpesa Widget**
-[ ![Download](https://api.bintray.com/packages/skyways/LipaNaMpesa/LipaNaMpesa/images/download.svg?version=0.1.0) ](https://bintray.com/skyways/LipaNaMpesa/LipaNaMpesa/0.1.0/link)
+[ ![Download](https://api.bintray.com/packages/skyways/LipaNaMpesa/LipaNaMpesa/images/download.svg?version=0.1.1) ](https://bintray.com/skyways/LipaNaMpesa/LipaNaMpesa/0.1.0/link)
 
 This a simple android library, that help create a floating widget with mpesa payment details or any payment gateway that has the same payment format.
 This offers great user experience when making payment manually. The user should not gram the payment details, the widget float in all the screens and the can click and copy the details they need.
@@ -9,7 +9,7 @@ This offers great user experience when making payment manually. The user should 
 
 Gradle: 
 ```java
- implementation 'com.lipanampesa:LipaNaMpesa:0.1.0'
+ implementation 'com.lipanampesa:LipaNaMpesa:0.1.1'
  ```
  Ask for permission to show a floating widget.
  
