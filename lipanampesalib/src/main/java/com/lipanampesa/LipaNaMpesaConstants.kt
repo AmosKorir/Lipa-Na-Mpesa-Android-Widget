@@ -6,8 +6,7 @@ package com.lipanampesa
  */
 class LipaNaMpesaConstants {
   companion object {
-    val AMOUNT = "amount"
-    val PAYBILL = "paybill"
-    val ACCOUNT = "account"
+    val LIPANAMPESA = "lipampesa"
+    val SYSTEM_ALERT_WINDOW_PERMISSION = 10432
   }
 }
