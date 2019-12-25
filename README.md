@@ -2,8 +2,8 @@
 **Floating Lipa na Mpesa Widget**
 [ ![Download](https://api.bintray.com/packages/skyways/LipaNaMpesa/LipaNaMpesa/images/download.svg?version=0.1.1) ](https://bintray.com/skyways/LipaNaMpesa/LipaNaMpesa/0.1.0/link)
 
-This a simple android library, that help create a floating widget with mpesa payment details or any payment gateway that has the same payment format.
-This offers great user experience when making payment manually. The user should not gram the payment details, the widget float in all the screens and the can click and copy the details they need.
+This a simple android library that helps to create a floating widget with mpesa payment details or any payment gateway that has the same payment format.
+This offers great user experience when making payment manually. The user should not cram the payment details, the widget floats in all the screens and the can click and copy the details they need.
 
 **How to use**
 
