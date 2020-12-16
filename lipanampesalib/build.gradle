@@ -15,7 +15,7 @@ ext {
   siteUrl = 'https://github.com/skyways/Lipa-Na-Mpesa-Android-Widget'
   gitUrl = 'https://github.com/skyways/Lipa-Na-Mpesa-Android-Widget'
 
-  libraryVersion = '0.1.0'
+  libraryVersion = '2.0.0'
   developerId = 'skyways'
   developerName = 'Korir Amos'
   developerEmail = 'amoskrr@gmail.com'
@@ -32,8 +32,8 @@ android {
   defaultConfig {
     minSdkVersion 15
     targetSdkVersion 29
-    versionCode 1
-    versionName "1.0"
+    versionCode 2
+    versionName "2.0"
 
     testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     consumerProguardFiles 'consumer-rules.pro'

@@ -154,10 +154,12 @@ class FloatingService : Service(), View.OnClickListener {
 
     private fun collapseExpandPayment() {
         if (collapseView.isVisible) {
+            topLabel.setText(string.click_to_expand)
             collapseLayout()
             topLabel.visibility = View.GONE
             closeView.visibility = View.GONE
         } else {
+            topLabel.text = getString(string.payment_details)
             topLabel.visibility = View.VISIBLE
             closeView.visibility = View.VISIBLE
             expandLayout()
