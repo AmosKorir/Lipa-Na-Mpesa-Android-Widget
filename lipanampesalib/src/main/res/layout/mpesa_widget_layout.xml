@@ -44,7 +44,9 @@
       android:layout_width="85dp"
       android:layout_height="85dp"
       app:cardBackgroundColor="@color/colorGreen"
-      app:cardCornerRadius="250dp">
+      app:cardCornerRadius="250dp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent">
 
     <androidx.cardview.widget.CardView
         android:layout_width="80dp"
