@@ -9,7 +9,7 @@ This offers great user experience when making payment manually. The user should 
 <table>
 <tr>
 <td>
-<img  width="200" height="400" src="https://github.com/AmosKorir/Lipa-Na-Mpesa-Android-Widget/blob/master/art/s1.jpg"/>
+<img  width="200" height="400" src="https://github.com/AmosKorir/Lipa-Na-Mpesa-Android-Widget/blob/master/art/s1.jpeg"/>
 </td>
 <td>
 
