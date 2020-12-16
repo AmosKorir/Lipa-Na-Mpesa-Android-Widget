@@ -5,6 +5,20 @@
 This a simple android library that helps to create a floating widget with mpesa payment details or any payment gateway that has the same payment format.
 This offers great user experience when making payment manually. The user should not cram the payment details, the widget floats in all the screens and the can click and copy the details they need.
 
+
+<table>
+<tr>
+<td>
+<img  width="200" height="400" src="https://github.com/AmosKorir/Lipa-Na-Mpesa-Android-Widget/blob/master/art/s1.jpeg"/>
+</td>
+<td>
+
+<img  width="200" height="400" src="https://github.com/AmosKorir/Lipa-Na-Mpesa-Android-Widget/blob/master/art/s2.jpg"/>
+</td>
+</tr>
+</table>
+
+
 **How to use**
 
 Gradle: 
@@ -38,8 +52,7 @@ Gradle:
           LipaNaMpesa(
             "34545455",
             "0712345678",
-            "2000",
-            resources.getColor(R.color.colorPrimaryDark)
+            "2000"
           )
         intent.putExtra(LipaNaMpesaConstants.LIPANAMPESA, lipaNaMpesa)
         startService(intent)

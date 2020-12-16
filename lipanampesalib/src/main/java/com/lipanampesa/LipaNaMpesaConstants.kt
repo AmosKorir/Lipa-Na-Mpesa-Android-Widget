@@ -6,7 +6,7 @@ package com.lipanampesa
  */
 class LipaNaMpesaConstants {
   companion object {
-    val LIPANAMPESA = "lipampesa"
-    val SYSTEM_ALERT_WINDOW_PERMISSION = 10432
+    const val LIPANAMPESA = "lipampesa"
+    const val SYSTEM_ALERT_WINDOW_PERMISSION = 10432
   }
 }

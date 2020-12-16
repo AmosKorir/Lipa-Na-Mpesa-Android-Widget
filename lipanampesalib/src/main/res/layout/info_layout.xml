@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="@dimen/dimen_150"
     android:id="@+id/collapseView"
+    android:layout_width="@dimen/dimen_150"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
-    >
+    android:background="@android:color/white"
+    android:orientation="vertical">
 
   <TextView
       android:id="@+id/textView"
@@ -12,98 +12,98 @@
       android:layout_height="wrap_content"
       android:layout_margin="@dimen/dimen_10"
       android:gravity="center"
-      android:text="@string/click_to_copy"
-      />
+      android:text="@string/click_to_copy" />
+
   <View
       android:id="@+id/divider"
       android:layout_width="match_parent"
       android:layout_height="@dimen/dimen_1"
-      android:background="?android:attr/listDivider"
-      />
+      android:background="?android:attr/listDivider" />
+
   <LinearLayout
       android:id="@+id/payBillView"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      android:orientation="vertical"
-      >
+      android:orientation="vertical">
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/dimen_5"
         android:gravity="center"
-        android:text="@string/paybill"
-        />
+        android:text="@string/paybill" />
+
     <TextView
         android:id="@+id/payBillNumber"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:textColor="@android:color/black"
-        />
+        android:textColor="@android:color/black" />
   </LinearLayout>
+
   <View
       android:id="@+id/divider2"
       android:layout_width="match_parent"
       android:layout_height="@dimen/dimen_1"
-      android:background="?android:attr/listDivider"
-      />
+      android:background="?android:attr/listDivider" />
+
   <LinearLayout
       android:id="@+id/accountView"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      android:orientation="vertical"
-      >
+      android:orientation="vertical">
+
     <TextView
         android:id="@+id/textView5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/dimen_5"
         android:gravity="center"
-        android:text="@string/account"
-        />
+        android:text="@string/account" />
+
     <TextView
         android:id="@+id/accountTxt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:textColor="@android:color/black"
-        />
+        android:textColor="@android:color/black" />
   </LinearLayout>
+
   <View
       android:id="@+id/divider3"
       android:layout_width="match_parent"
       android:layout_height="@dimen/dimen_1"
-      android:background="?android:attr/listDivider"
-      />
+      android:background="?android:attr/listDivider" />
+
   <LinearLayout
       android:id="@+id/amountView"
       android:layout_width="match_parent"
       android:layout_height="match_parent"
-      android:orientation="vertical"
-      >
+      android:orientation="vertical">
+
     <TextView
         android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/dimen_5"
         android:gravity="center"
-        android:text="@string/amount"
-        />
+        android:text="@string/amount" />
+
     <TextView
         android:id="@+id/amount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:textColor="@android:color/black"
-        />
+        android:textColor="@android:color/black" />
   </LinearLayout>
+
   <View
       android:id="@+id/divider4"
       android:layout_width="match_parent"
       android:layout_height="1dp"
-      android:background="?android:attr/listDivider"
-      />
+      android:background="?android:attr/listDivider" />
+
   <Button
       android:id="@+id/minimizeButtton"
       android:layout_width="match_parent"
@@ -111,6 +111,6 @@
       android:background="@android:color/white"
       android:gravity="center"
       android:text="@string/minimize"
-      />
+      android:textAllCaps="false" />
 
 </LinearLayout>

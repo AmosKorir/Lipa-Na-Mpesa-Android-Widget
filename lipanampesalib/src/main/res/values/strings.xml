@@ -4,7 +4,9 @@
   <string name="click_to_copy">Click To Copy</string>
   <string name="paybill">PAYBILL</string>
   <string name="account">ACCOUNT</string>
-  <string name="minimize">MINIMIZE</string>
+  <string name="minimize">Minimize</string>
   <string name="amount">AMOUNT</string>
   <string name="click_to_expand">Click To Expand</string>
+  <string name="copied">Copied</string>
+  <string name="no_text">No text to be copied</string>
 </resources>
