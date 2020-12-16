@@ -9,6 +9,5 @@ import java.io.Serializable
 data class LipaNaMpesa(
   val PAYBILL: String,
   val ACCOUNT: String,
-  val AMOUNT: String,
-  val PRIMARYCOLOR: Int
+  val AMOUNT: String
 ) : Serializable

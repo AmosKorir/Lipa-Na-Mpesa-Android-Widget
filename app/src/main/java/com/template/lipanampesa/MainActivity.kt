@@ -31,26 +31,24 @@ class MainActivity : AppCompatActivity() {
   private fun showWidget() {
     when {
       VERSION.SDK_INT < VERSION_CODES.M -> {
-        var intent = Intent(this@MainActivity, FloatingService::class.java)
-        var lipaNaMpesa =
+        val intent = Intent(this@MainActivity, FloatingService::class.java)
+        val lipaNaMpesa =
           LipaNaMpesa(
             "34545455",
             "0712345678",
-            "2000",
-            resources.getColor(R.color.colorPrimaryDark)
+            "2000"
           )
         intent.putExtra(LipaNaMpesaConstants.LIPANAMPESA, lipaNaMpesa)
         startService(intent)
 
       }
       Settings.canDrawOverlays(this) -> {
-        var intent = Intent(this@MainActivity, FloatingService::class.java)
-        var lipaNaMpesa =
+        val intent = Intent(this@MainActivity, FloatingService::class.java)
+        val lipaNaMpesa =
           LipaNaMpesa(
             "34545455",
             "0712345678",
-            "2000",
-            resources.getColor(R.color.colorPrimaryDark)
+            "2000"
           )
         intent.putExtra(LipaNaMpesaConstants.LIPANAMPESA, lipaNaMpesa)
         startService(intent)

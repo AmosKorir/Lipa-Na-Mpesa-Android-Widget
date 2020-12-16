@@ -1,36 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="@dimen/dimen_180"
-    android:layout_height="wrap_content"
-    android:background="@android:color/white"
-    >
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
 
   <Button
       android:id="@+id/topCollapsible"
       android:layout_width="@dimen/dimen_150"
       android:layout_height="wrap_content"
+      android:layout_marginStart="-10dp"
+      android:layout_marginLeft="-10dp"
+      android:background="@color/colorGreen"
       android:text="@string/payment_details"
       android:textColor="@android:color/white"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="parent"
-      />
+      android:visibility="gone"
+      app:layout_constraintBottom_toBottomOf="@+id/cardView"
+      app:layout_constraintStart_toEndOf="@+id/cardView"
+      app:layout_constraintTop_toTopOf="@+id/cardView" />
+
   <ImageView
       android:id="@+id/closingImage"
       android:layout_width="@dimen/dimen_30"
       android:layout_height="@dimen/dimen_0"
+      android:background="@color/colorGreen"
       android:src="@drawable/ic_close_black_24dp"
+      android:visibility="gone"
       app:layout_constraintBottom_toBottomOf="@+id/topCollapsible"
-      app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toEndOf="@+id/topCollapsible"
-      app:layout_constraintTop_toTopOf="parent"
-      />
+      app:layout_constraintTop_toTopOf="@+id/topCollapsible" />
+
   <include
       layout="@layout/info_layout"
       android:layout_width="@dimen/dimen_180"
       android:layout_height="wrap_content"
-      app:layout_constraintEnd_toEndOf="parent"
+      android:background="@android:color/white"
+      android:visibility="gone"
+      app:layout_constraintStart_toStartOf="@+id/topCollapsible"
+      app:layout_constraintTop_toBottomOf="@+id/topCollapsible" />
+
+  <androidx.cardview.widget.CardView
+      android:id="@+id/cardView"
+      android:layout_width="85dp"
+      android:layout_height="85dp"
+      app:cardBackgroundColor="@color/colorGreen"
+      app:cardCornerRadius="250dp"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/topCollapsible"
-      />
+      app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        app:cardCornerRadius="250dp">
+
+      <ImageView
+          android:id="@+id/logoImg"
+          android:layout_width="80dp"
+          android:layout_height="80dp"
+          android:scaleType="centerCrop"
+          android:src="@drawable/logo" />
+
+    </androidx.cardview.widget.CardView>
+
+  </androidx.cardview.widget.CardView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
